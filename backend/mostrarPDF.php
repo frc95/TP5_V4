@@ -59,4 +59,4 @@ $mpdf->debug = true;
 $mpdf->WriteHTML($tabla,2);
 
 $mpdf->Output('mi_pdf.pdf', 'I');
-?>
+
