@@ -58,5 +58,8 @@ $mpdf->WriteHTML('<h2>Listado de Empleados</h2>',1);
 $mpdf->debug = true;
 $mpdf->WriteHTML($tabla,2);
 
+error_reporting(E_ALL); 
+ini_set('display_errors', 1);
+
 $mpdf->Output('mi_pdf.pdf', 'I');
 
