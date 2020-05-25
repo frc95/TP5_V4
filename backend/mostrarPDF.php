@@ -54,9 +54,9 @@ $tabla='<table align="">
 		    </tr>
 	    </table>';
 
-$mpdf->WriteHTML('<h2>Listado de Empleados</h2>');
-
-$mpdf->WriteHTML($tabla);
+$mpdf->WriteHTML('<h2>Listado de Empleados</h2>',1);
+$mpdf->debug = true;
+$mpdf->WriteHTML($tabla,2);
 
 $mpdf->Output('mi_pdf.pdf', 'I');
 ?>
