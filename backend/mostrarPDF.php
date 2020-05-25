@@ -7,7 +7,7 @@ require "fabrica.php";
 
 
 header('content-type:application/pdf');
-header('Content-Disposition: inline; filename="listado"');
+
 header('Content-Transfer-Encoding: binary');
 header('Accept-Ranges: bytes');
 
