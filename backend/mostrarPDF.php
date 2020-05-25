@@ -18,8 +18,9 @@ $mpdf = new \Mpdf\Mpdf(['orientation' => 'P',
                         'pagenumSuffix' => ' - ',
                         'nbpgPrefix' => ' de ',
                         'nbpgSuffix' => ' páginas']);
+$dni=$_SESSION["DNIEmpleado"];
 
-$mpdf->SetProtection(array(), $_SESSION["DNIEmpleado"], $_SESSION["DNIEmpleado"]);
+$mpdf->SetProtection(array(), $dni, $dni);
 
 $mpdf->SetHeader('Amarilla Godoy Franco Nahuel||{PAGENO}{nbpg}');
 $mpdf->setFooter('https://tp5-pdo-franco-v4.herokuapp.com/||{PAGENO}');
