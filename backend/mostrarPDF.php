@@ -4,7 +4,7 @@ require "persona.php";
 require "empleado.php";
 require "fabrica.php";
 
-
+ob_start();
 
 header('content-type:application/pdf');
 
